@@ -9,19 +9,10 @@ This guide gets you from zero to building mood boards with Claude in about 10 mi
 Skills are small instruction files that teach Claude your specific workflow. Copy this command into your terminal:
 
 ```bash
-mkdir -p ~/.claude/skills/d4c-moodboard
-curl -fsSL https://raw.githubusercontent.com/[D4C-REPO]/main/skills/d4c-moodboard/SKILL.md \
-  -o ~/.claude/skills/d4c-moodboard/SKILL.md
+curl -fsSL https://raw.githubusercontent.com/NoonMoonAI/d4c-cowork-skills/main/install.sh | bash
 ```
 
-> **Note for Nathan:** Replace `[D4C-REPO]` with the actual GitHub repo path once you've published it (e.g., `design4corners/claude-skills`). Until then, manually copy the SKILL.md from the project folder.
-
-**Manual install (until the repo is live):**
-```bash
-mkdir -p ~/.claude/skills/d4c-moodboard
-cp "/path/to/D4C_mood_boards:/D4C Moodboard_Claude Cowork Files/skills/d4c-moodboard/SKILL.md" \
-   ~/.claude/skills/d4c-moodboard/SKILL.md
-```
+That single command installs the skill, Python dependencies, and checks your Adobe plugin config. Done.
 
 Once installed, you can type `/d4c-moodboard` in any Claude CoWork session to activate the full mood board workflow.
 
